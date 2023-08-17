@@ -1,5 +1,48 @@
-template-repository (1.0-1) unstable; urgency=medium
+wayfire (0.7.5-1) unstable; urgency=medium
 
-  * Initial release
+  * Upload to unstable.
+  * debian/patches/0001-Fix-FTBFS-with-gcc-13.patch: Fix FTBFS with
+    gcc 13. (Closes: #1037892)
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+ -- Boyuan Yang <byang@debian.org>  Mon, 24 Jul 2023 17:03:49 -0400
+
+wayfire (0.7.5-1~exp2) experimental; urgency=high
+
+  * debian/control: Let libwf-utils-dev depends on libwf-utils0.
+    (Closes: #1035440)
+
+ -- Boyuan Yang <byang@debian.org>  Wed, 03 May 2023 15:20:17 -0400
+
+wayfire (0.7.5-1~exp1) experimental; urgency=medium
+
+  * New upstream release.
+  * debian/patches: Dropped, merged upstream.
+  * debian/control: Require wlroots (>= 0.16).
+
+ -- Boyuan Yang <byang@debian.org>  Wed, 07 Dec 2022 15:45:49 -0500
+
+wayfire (0.7.4-3) unstable; urgency=medium
+
+  * debian/control: Let libwf-utils-dev depends on libwf-utils0.
+    (Closes: #1035440)
+
+ -- Boyuan Yang <byang@debian.org>  Wed, 03 May 2023 15:25:12 -0400
+
+wayfire (0.7.4-2) unstable; urgency=medium
+
+  * debian/patches: Apply patch to fix package reproducibility.
+    (Closes: #1016486)
+
+ -- Boyuan Yang <byang@debian.org>  Wed, 03 Aug 2022 10:39:50 -0400
+
+wayfire (0.7.4-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Boyuan Yang <byang@debian.org>  Sun, 31 Jul 2022 10:29:34 -0400
+
+wayfire (0.7.3-1) unstable; urgency=medium
+
+  * Initial release. (Closes: #953892)
+
+ -- Boyuan Yang <byang@debian.org>  Thu, 05 May 2022 12:03:58 -0400
