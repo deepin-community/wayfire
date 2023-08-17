@@ -1,0 +1,21 @@
+From: Boyuan Yang <byang@debian.org>
+Date: Mon, 24 Jul 2023 17:03:16 -0400
+Subject: Fix FTBFS with gcc 13
+
+Bug-Debian: https://bugs.debian.org/1037892
+---
+ wf-utils/wayfire/rule/lambda_rule.cpp | 1 +
+ 1 file changed, 1 insertion(+)
+
+diff --git a/wf-utils/wayfire/rule/lambda_rule.cpp b/wf-utils/wayfire/rule/lambda_rule.cpp
+index 99c558e..0bc6986 100644
+--- a/wf-utils/wayfire/rule/lambda_rule.cpp
++++ b/wf-utils/wayfire/rule/lambda_rule.cpp
+@@ -1,6 +1,7 @@
+ #include "wayfire/rule/lambda_rule.hpp"
+ #include "wayfire/condition/condition.hpp"
+ #include <cstddef>
++#include <cstdint>
+ #include <functional>
+ #include <memory>
+ #include <sstream>
